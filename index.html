@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js task</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //  Table of 15
+    let j = 15
+    for (let i = 1; i <= 10; i++) {
+        let result = i * j
+        document.write(`${i + " × " + j + " = " + result + "<br>"}`);
+    }
+
+    // ===== multiply function
+    function abc(x, y, z) {
+        let r = x * y * z
+        return r;
+    }
+    let output = abc(10, 20, 30)
+    console.log(output)
+
+    // ===============
+    let Data = []
+    function myFun() {
+        myData = [1, 2, 3, 4, 5]
+        return myData
+    }
+    const data = myFun();
+    console.log(data);
+
+    function myFun2() {
+        console.log(data)
+    }
+    myFun2()
+
+    //  ============= pattern ==================
+   
+    for (let i = 1; i <= 4; i++) {
+        for(let j= 1; j<=4; j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+
+</html>
