@@ -56,27 +56,40 @@
         function inner() {
             let row = [1, 2, 3, 4, 5, 6, 7];
             localData.push(row)
-            document.write("row :- " ,row  + "<br>");
+            document.write("row :- ", row + "<br>");
             return;
         }
         inner()
-        document.write("localData :- ",localData  + "<br>");
+        document.write("localData :- ", localData + "<br>");
         data.push(localData)
         return;
     }
     main()
     function global2() {
-        document.write("data:- ",data  + "<br>");
+        document.write("data:- ", data + "<br>");
     }
     global2()
 
     //=================== js loop
+    // function pattern(a, b) {
+    //     for (let j = 1; j <= a; j++) {
+    //         document.write("😁".repeat(b) + "<br>");
+    //     }
+    // }
+    // pattern(3, 5)
     function pattern(a, b) {
-        for (let j = 1; j <= a; j++) {
-            document.write("😁".repeat(b) + "<br>");
-        }
+            for (let j = b; j > 0; j--) {
+                console.log("  ".repeat(j) +"😁".repeat(b-j));
+            }
     }
     pattern(3, 5)
+
+    let n = 5;
+    for (let i = 1; i <= n; i++) {
+        let str = "* ";
+        let space = '  ';
+        console.log(space.repeat((n - i)) + str.repeat(i));
+    }
 
 </script>
 
