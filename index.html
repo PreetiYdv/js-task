@@ -50,25 +50,25 @@
     // }
 
     <!-- ==================== -->
-    let data = []
-    function main() {
-        let localData = []
-        function inner() {
-            let row = [1, 2, 3, 4, 5, 6, 7];
-            localData.push(row)
-            document.write("row :- ", row + "<br>");
-            return;
-        }
-        inner()
-        document.write("localData :- ", localData + "<br>");
-        data.push(localData)
-        return;
-    }
-    main()
-    function global2() {
-        document.write("data:- ", data + "<br>");
-    }
-    global2()
+    // let data = []
+    // function main() {
+    //     let localData = []
+    //     function inner() {
+    //         let row = [1, 2, 3, 4, 5, 6, 7];
+    //         localData.push(row)
+    //         document.write("row :- ", row + "<br>");
+    //         return;
+    //     }
+    //     inner()
+    //     document.write("localData :- ", localData + "<br>");
+    //     data.push(localData)
+    //     return;
+    // }
+    // main()
+    // function global2() {
+    //     document.write("data:- ", data + "<br>");
+    // }
+    // global2()
 
     //=================== js loop
     // function pattern(a, b) {
@@ -77,19 +77,40 @@
     //     }
     // }
     // pattern(3, 5)
-    function pattern(a, b) {
-            for (let j = b; j > 0; j--) {
-                console.log("  ".repeat(j) +"😁".repeat(b-j));
-            }
-    }
-    pattern(3, 5)
+    // function pattern(a, b) {
+    //         for (let j = b; j > 0; j--) {
+    //             console.log("  ".repeat(j) +"😁".repeat(b-j));
+    //         }
+    // }
+    // pattern(3, 5)
 
-    let n = 5;
-    for (let i = 1; i <= n; i++) {
-        let str = "* ";
-        let space = '  ';
-        console.log(space.repeat((n - i)) + str.repeat(i));
+    // let n = 5;
+    // for (let i = 1; i <= n; i++) {
+    //     let str = "* ";
+    //     let space = '  ';
+    //     console.log(space.repeat((n - i)) + str.repeat(i));
+    // }
+
+    let data = [3, 4, 5, 6, -7, -10, 5]
+    function largestNum() {
+        let first = data[0] * data[1]
+        let v1 = data[0]
+        let v2 = data[1]
+        for (let i = 1; i < data.length - 1; i++) {
+            result = data[i] * data[i + 1]
+
+            if (result > first) {
+                first = result
+                 v1 = data[i]
+                 v2 = data[i + 1]
+            
+            }
+        }
+        console.log(first , v1, v2)
+        return;
     }
+    largestNum()
+
 
 </script>
 
