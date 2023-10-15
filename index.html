@@ -101,16 +101,30 @@
 
             if (result > first) {
                 first = result
-                 v1 = data[i]
-                 v2 = data[i + 1]
-            
+                v1 = data[i]
+                v2 = data[i + 1]
+
             }
         }
-        console.log(first , v1, v2)
+        console.log(first, v1, v2)
         return;
     }
     largestNum()
 
+    // qube of single numbers
+    function cubeRoot(num) {
+        cube = num * num * num
+        console.log(cube);
+    }
+    cubeRoot(5)
+    // qube of  range of numbers
+    function cubeRange(array) {
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index] * array[index] * array[index];
+            console.log(element);
+        }
+    }
+    cubeRange([1, 2, 3, 4, 5])
 
 </script>
 
